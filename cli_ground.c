@@ -1054,6 +1054,18 @@ void exec_command(char* input) {
     }else if (strcmp(cmd,"position_box_off") == 0){
         com = position_box_off;
         create_packet(&pkt, com, payload, 0, big_payload, 0, SAG);
+    }else if (strcmp(cmd,"housekeeping_on") == 0){
+        com = housekeeping_on;
+        create_packet(&pkt, com, payload, 0, big_payload, 0, SAG);
+    }else if (strcmp(cmd,"housekeeping_off") == 0){
+        com = housekeeping_off;
+        create_packet(&pkt, com, payload, 0, big_payload, 0, SAG);
+    }else if (strcmp(cmd,"start_housekeeping") == 0){
+        com = start_housekeeping;
+        create_packet(&pkt, com, payload, 0, big_payload, 0, SAG);
+    }else if (strcmp(cmd,"stop_housekeeping") == 0){
+        com = stop_housekeeping;
+        create_packet(&pkt, com, payload, 0, big_payload, 0, SAG);
     }else{
     	cmd_unknown=1;
         printf("%s: Unknown command\n", cmd);
