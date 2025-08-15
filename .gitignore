@@ -1,0 +1,23 @@
+# Log files
+log/
+*.log
+
+# Compiled binaries
+*.o
+*.out
+*.exe
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
